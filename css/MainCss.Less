@@ -1,6 +1,15 @@
 @import "bootstrap.css";
 @import "font-awesome.css";
 
+@nav-Height: 50px;
+@page-Height: 600px;
+
+@brand-primary: #428bca;
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+
 .no-padding{
   padding: 0px !important;
 }
@@ -9,49 +18,71 @@
   margin: 0px !important;
 }
 
+.no-border{
+  border: 0px !important;
+}
+
 .full-width{
   width: 100%;
 }
 
 .page-size{
   .full-width;
-  height: 600px;
+  height: @page-Height;
 }
 
 .page-1{
-  background-color: red;
+  background-color: @brand-primary;
   .no-margin;
   .no-padding;
   .page-size;
 }
 .page-2{
-  background-color: blue;
+  background-color: @brand-success;
   .no-margin;
   .no-padding;
   .page-size;
 }
 .page-3{
-  background-color: green;
+  background-color: @brand-warning;
   .no-margin;
   .no-padding;
   .page-size;
 }
 .page-4{
-  background-color: grey;
+  background-color: @brand-danger;
   .no-margin;
   .no-padding;
   .page-size;
 }
 .page-5{
-  background-color: #e7e7e7;
+  background-color: @brand-info;
   .no-margin;
   .no-padding;
   .page-size;
 }
 
+.div-nav-size{
+  .full-width;
+  height: @nav-Height;
+}
+
 .navbar-menu{
   .no-margin;
   .no-padding;
-  .text-center;
-  background-color: rgba(180, 180, 180, 0.5);
+  //.text-center;
+  background-color: rgba(0, 0, 0, 0.79);
 }
+
+.btn-size{
+  min-width: 75px;
+  height: @nav-Height;
+}
+
+.nav-btn{
+  .btn-size;
+  .no-border;
+  border-radius: 0px;
+  box-shadow: 0px !important;
+}
+
