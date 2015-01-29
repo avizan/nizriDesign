@@ -1,0 +1,12 @@
+{
+    "name": "Nizri Design",
+    "description": "",
+    "version": "0.0.1",
+    "homepage": "",
+    "main": [],
+    "ignore": [],
+    "dependencies": {
+        "jquery": ">= 1.9.1",
+        "bootstrap": ">= 3.3.1"
+    }
+}

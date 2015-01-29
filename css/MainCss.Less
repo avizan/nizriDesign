@@ -10,6 +10,21 @@
 @brand-warning: #f0ad4e;
 @brand-danger:  #d9534f;
 
+@nav-text-color: white;
+@nav-background-color: transparent;
+
+@me-string: "me";
+@skill-string: "skill";
+@portfolio-string: "portfolio";
+@experience-string: "experience";
+
+@bomp-url: "../Images/a.png";
+@home-background: "../Images/Svgs/Home-page-bgd.svg";
+
+body{
+  position: relative;
+}
+
 .no-padding{
   padding: 0px !important;
 }
@@ -31,8 +46,85 @@
   height: @page-Height;
 }
 
+.no-focus-outline{
+  &:focus{
+    outline: none !important;
+  }
+}
+
+
+
+
+.div-nav-size{
+  .full-width;
+  height: @nav-Height;
+}
+
+.navbar-menu{
+  .no-margin;
+  .no-padding;
+  background-color: rgba(0, 0, 0, 0.79);
+}
+
+.btn-size{
+  min-width: 75px;
+  height: @nav-Height;
+}
+
+.nav-btn{
+  .no-focus-outline;
+  .btn-size;
+  .no-border;
+  color:@nav-text-color;
+  background: @nav-background-color;
+  border-radius: 0px;
+  box-shadow: 0px !important;
+}
+
+.nav-link{
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border 0.3s ease-in-out;;
+  -moz-transition: border 0.3s ease-in-out;;
+  -ms-transition: border 0.3s ease-in-out;;
+  -o-transition: border 0.3s ease-in-out;;
+  transition: border 0.3s ease-in-out;;
+
+  &:hover{
+    border-bottom: 3px solid #000000;
+  }
+  .no-focus-outline;
+}
+
+.scroll-link{
+  .no-focus-outline;
+}
+
+.me-btn{
+  content: @me-string;
+}
+
+.skill-btn{
+  content: @skill-string;
+}
+
+.portfolio-btn{
+  content: @portfolio-string;
+}
+
+.experience-btn{
+  content: @experience-string;
+}
+
+.nav-link{
+  display: inline-block;
+}
+
+
+
+
 .page-1{
   background-color: @brand-primary;
+//  background-image: url(@home-background);
   .no-margin;
   .no-padding;
   .page-size;
@@ -62,27 +154,128 @@
   .page-size;
 }
 
-.div-nav-size{
-  .full-width;
-  height: @nav-Height;
+.div-seperator{
+  height: 50px;
+  width: 100%;
+  background-image: url(@bomp-url);
 }
 
-.navbar-menu{
-  .no-margin;
-  .no-padding;
-  //.text-center;
-  background-color: rgba(0, 0, 0, 0.79);
+#computer-svg{
+  transform:translate(300px,30px) scale(2.5) rotate(180deg);
 }
 
-.btn-size{
-  min-width: 75px;
-  height: @nav-Height;
+ #computer{
+   position: absolute;
+   right: 40%;
+   top: 5%;
+ }
+
+ #glasses{
+   position: absolute;
+   left: 85%;
+   top: 100%;
+ }
+@front-frame-color: black;
+@back-sticks-color: red;
+@glasses-color: orange;
+@glans-color: yellow;
+
+.back-sticks{
+  fill: @front-frame-color;
 }
 
-.nav-btn{
-  .btn-size;
-  .no-border;
-  border-radius: 0px;
-  box-shadow: 0px !important;
+.front-frame{
+  fill:@front-frame-color;
 }
 
+.glasses{
+  fill:@glasses-color;
+}
+
+.glans{
+  fill: @glans-color;
+}
+
+@comp-shadow-color: #ffcc6f;
+
+@mouse-color: white;
+@comp-screen-color: lightgrey;
+@mouse-wire-color: white;
+@mouse-pad-color: white;
+
+@full-sleeve-color: #000052;
+@long-sleeve-color: #228eff;
+@lighter-sleeve-color: #1c3a65;
+@hands-color: #b3ab74;
+
+@keyboard-color: grey;
+
+@screen-glas-color:grey;
+@screen-line-color:white;
+@screen-color: black;
+@clip-shadow-color: #242424;
+@dashboard-color: white;
+@mouse-shadow-color: grey;
+
+.comp-screen{
+fill:@comp-screen-color;
+}
+
+.hands{
+  fill:@hands-color;
+}
+.mouse-shadow{
+  fill:@mouse-shadow-color;
+}
+
+.dashboard{
+  fill:@dashboard-color;
+}
+
+.clip-shadow{
+  fill:@clip-shadow-color;
+}
+
+.screen{
+  fill:@screen-color;
+}
+
+.screen-line{
+  fill:@screen-line-color;
+}
+
+.keyboard{
+  fill:@keyboard-color;
+}
+
+.comp-shadow{
+  fill:@comp-shadow-color;
+}
+
+.mouse{
+  fill:@mouse-color;
+}
+
+.screen-glas{
+  fill:@screen-glas-color;
+}
+
+.mouse-wire{
+  fill:@mouse-wire-color;
+}
+
+.mouse-pad{
+  fill:@mouse-pad-color;
+}
+
+.full-sleeve{
+  fill:@full-sleeve-color;
+}
+
+.long-sleeve{
+  fill:@long-sleeve-color;
+}
+
+.lighter-sleeve{
+  fill:@lighter-sleeve-color;
+}

@@ -1,5 +1,8 @@
 @import "bootstrap.css";
 @import "font-awesome.css";
+body {
+  position: relative;
+}
 .no-padding {
   padding: 0px !important;
 }
@@ -15,6 +18,66 @@
 .page-size {
   width: 100%;
   height: 600px;
+}
+.no-focus-outline:focus {
+  outline: none !important;
+}
+.div-nav-size {
+  width: 100%;
+  height: 50px;
+}
+.navbar-menu {
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: rgba(0, 0, 0, 0.79);
+}
+.btn-size {
+  min-width: 75px;
+  height: 50px;
+}
+.nav-btn {
+  min-width: 75px;
+  height: 50px;
+  border: 0px !important;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 0px;
+  box-shadow: 0px !important;
+}
+.nav-btn:focus {
+  outline: none !important;
+}
+.nav-link {
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border 0.3s ease-in-out;
+  -moz-transition: border 0.3s ease-in-out;
+  -ms-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #000000;
+}
+.nav-link:focus {
+  outline: none !important;
+}
+.scroll-link:focus {
+  outline: none !important;
+}
+.me-btn {
+  content: "me";
+}
+.skill-btn {
+  content: "skill";
+}
+.portfolio-btn {
+  content: "portfolio";
+}
+.experience-btn {
+  content: "experience";
+}
+.nav-link {
+  display: inline-block;
 }
 .page-1 {
   background-color: #428bca;
@@ -51,23 +114,81 @@
   width: 100%;
   height: 600px;
 }
-.div-nav-size {
+.div-seperator {
+  height: 50px;
   width: 100%;
-  height: 50px;
+  background-image: url("../Images/a.png");
 }
-.navbar-menu {
-  margin: 0px !important;
-  padding: 0px !important;
-  background-color: rgba(0, 0, 0, 0.79);
+#computer-svg {
+  transform: translate(300px, 30px) scale(2.5) rotate(180deg);
 }
-.btn-size {
-  min-width: 75px;
-  height: 50px;
+#computer {
+  position: absolute;
+  right: 40%;
+  top: 5%;
 }
-.nav-btn {
-  min-width: 75px;
-  height: 50px;
-  border: 0px !important;
-  border-radius: 0px;
-  box-shadow: 0px !important;
+#glasses {
+  position: absolute;
+  left: 85%;
+  top: 100%;
+}
+.back-sticks {
+  fill: #000000;
+}
+.front-frame {
+  fill: #000000;
+}
+.glasses {
+  fill: #ffa500;
+}
+.glans {
+  fill: #ffff00;
+}
+.comp-screen {
+  fill: #d3d3d3;
+}
+.hands {
+  fill: #b3ab74;
+}
+.mouse-shadow {
+  fill: #808080;
+}
+.dashboard {
+  fill: #ffffff;
+}
+.clip-shadow {
+  fill: #242424;
+}
+.screen {
+  fill: #000000;
+}
+.screen-line {
+  fill: #ffffff;
+}
+.keyboard {
+  fill: #808080;
+}
+.comp-shadow {
+  fill: #ffcc6f;
+}
+.mouse {
+  fill: #ffffff;
+}
+.screen-glas {
+  fill: #808080;
+}
+.mouse-wire {
+  fill: #ffffff;
+}
+.mouse-pad {
+  fill: #ffffff;
+}
+.full-sleeve {
+  fill: #000052;
+}
+.long-sleeve {
+  fill: #228eff;
+}
+.lighter-sleeve {
+  fill: #1c3a65;
 }
